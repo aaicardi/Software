@@ -1,4 +1,5 @@
-﻿//***********************************************************
+﻿/// <reference path="../../../login.aspx" />
+//***********************************************************
 // Author           : Ing. Alex Aicardi
 // Created          : 21/08/2016
 // Description      : Logout
@@ -11,7 +12,7 @@ function Logout() {
 
     this.inicializar = function () {
         objSession.eliminarSession();
-        window.location.href = "login.html";
+        window.location.href = "../login.aspx";
     }
 }
 objLogout = new Logout();
